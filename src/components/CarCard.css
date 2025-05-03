@@ -1,0 +1,117 @@
+.car-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .car-card {
+    width: 18rem;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    border: none;
+  }
+  
+  .car-img {
+    height: 180px;
+    object-fit: contain;
+    background: #f7f7f7;
+    mix-blend-mode: multiply;
+  }
+  
+  .car-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .card-body-custom {
+    position: relative;
+    height: 110px;
+    background: white;
+  }
+  
+  .car-info, .rent-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+  }
+  
+  .car-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 1;
+    padding: 0.5rem 1rem;
+  }
+  
+  .car-info div {
+    font-size: 0.8rem;
+    color: #333;
+  }
+  
+  .rent-btn {
+    opacity: 0;
+  }
+  
+  .car-card:hover .car-info {
+    opacity: 0;
+  }
+  
+  .car-card:hover .rent-btn {
+    opacity: 1;
+  }
+  
+  .rent-btn button {
+    border-radius: 6rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+.custom-modal .modal-content {
+    background-color: #01010b; 
+    color: #fff; 
+    border-radius: 20px;
+    border: none;
+    
+  }
+  
+  .custom-modal .modal-header {
+    border-bottom: 1px solid #444;
+  }
+  
+  
+  .custom-modal .form-control {
+    background-color: #01010f;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  
+  .placeholdertel{
+    color: #f7f7f7;
+  }
+
+
+  .custom-alert-wrapper {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050;
+  }
+  
+  @media (min-width: 768px) {
+    .custom-alert-wrapper {
+      left: auto;
+      right: 20px;
+      top: 20px;
+      transform: none;
+    }
+  }
+  

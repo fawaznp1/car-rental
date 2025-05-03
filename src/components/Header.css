@@ -1,0 +1,44 @@
+.custom-navbar {
+    background-color: transparent !important;
+    backdrop-filter: blur(8px);
+    padding: 1rem 0;
+  }
+  
+  .nav-brand {
+    font-weight: bold;
+    color: white !important;
+  }
+  
+  .nav-link-custom {
+    position: relative; 
+    color: #ffffff !important;
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .nav-link-custom::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #0d6efd; /* Bootstrap primary color */
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link-custom:hover::after {
+    width: 100%;
+  }
+  
+  .nav-link-custom:hover {
+    color: #0d6efd !important;
+  }
+  
+  .nav-link-custom.active,
+  .nav-link-custom:focus {
+    font-weight: bold;
+    color: #0d6efd !important;
+  }
+  
