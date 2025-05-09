@@ -1,18 +1,11 @@
 import React, { useState } from 'react';
 import './Team.css';
 import mech1 from '../images/webp/mech1.webp'
-import t2 from '../images/webp/austin-distel-97HfVpyNR1M-unsplash (1).webp'
 import t3 from '../images/webp/austin-distel-h1RW-NFtUyc-unsplash (1).webp'
-import t4 from '../images/webp/christina-wocintechchat-com-SJvDxw0azqw-unsplash (1).webp'
-import t5 from '../images/webp/dr1.webp'
-import t6 from '../images/webp/fotos-8ISNp7BpXdM-unsplash (1).webp'
 import t7 from '../images/webp/fotos-Qxw6i75WZ4A-unsplash (1).webp'
 import t8 from '../images/webp/frank-mckenna-Ap6t4U-VIqw-unsplash (1).webp'
 import t9 from '../images/webp/kato-blackmore-qcF-19BvViE-unsplash (1).webp';
-import t10 from '../images/webp/kenny-eliason-2K_-PG95qlI-unsplash (1).webp'
-import t11 from '../images/webp/linkedin-sales-solutions-i1MXZuHqD2k-unsplash (1).webp'
 import t12 from '../images/webp/muhammad-rizqi-pEfPElcZBM4-unsplash (1).webp'
-import t13 from '../images/webp/nem-malosi-_c8EEfOVRow-unsplash (1).webp'
 import t14 from '../images/webp/shipman-northcutt-sgZX15Da8YE-unsplash (2).webp'
 import t15 from '../images/webp/sten-rademaker-UZUzvJEvKnI-unsplash (1).webp'
 import t16 from '../images/webp/valerie-kaarna-YsutjEqmLWo-unsplash (1).webp'
