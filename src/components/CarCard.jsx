@@ -18,7 +18,6 @@ import image11 from '../images/car11.png'
 import image12 from '../images/car12.png'
 import image13 from '../images/car13.png'
 
-
 import './CarCard.css';
 
 const cars = [
@@ -36,48 +35,49 @@ const cars = [
     { image: image12, name: "Dodge Charger GT ", transmission: "Automatic", seats: 2, mpg: 6 },
     { image: image13, name: "Volvo XC60", transmission: "Automatic", seats: 2, mpg: 6 },
     { image: image8, name: "Ferrari EQ7", transmission: "Manual", seats: 2, mpg: 7 },
-  ];
-  
+];
 
 function CarList() {
   const [show, setShow] = useState(false);
   const [selectedCar, setSelectedCar] = useState(null);
   const [showAlert, setShowAlert] = useState(false);
 
-
   const handleShow = (car) => {
     setSelectedCar(car);
     setShow(true);
   };
 
+  // Just close the modal without showing alert
   const handleClose = () => {
     setShow(false);
-    
+    setSelectedCar(null);
+  };
+
+  // Handle save action - close modal AND show alert
+  const handleSave = () => {
+    setShow(false);
+    setSelectedCar(null);
     setShowAlert(true);
     setTimeout(() => setShowAlert(false), 4000); // hides after 4 sec
-    setSelectedCar(null);
-
   };
 
   return (
     <>
-        <h2 className="cards-title text-center fw-bold mb-4" id='catalog' >
-  Explore From a Wide Range of Premium Cars 
-        </h2>
-      <div className="car-grid" >
-        
+      <h2 className="cards-title text-center fw-bold mb-4" id='catalog'>
+        Explore From a Wide Range of Premium Cars 
+      </h2>
+      <div className="car-grid">
         {cars.map((car, idx) => (
           <Card className="car-card" key={idx}>
-            <Card.Img variant="top" src={car.image} className="car-img"  loading='lazy'/>
+            <Card.Img variant="top" src={car.image} className="car-img" loading='lazy' />
             <Card.Body className="card-body-custom">
               <Card.Title className="text-center">{car.name}</Card.Title>
 
               <div className="car-info">
-                 <div><FaTachometerAlt /><div>{car.transmission}</div></div>
-                    <div><FaUsers /><div>{car.seats} Seat</div></div>
+                <div><FaTachometerAlt /><div>{car.transmission}</div></div>
+                <div><FaUsers /><div>{car.seats} Seat</div></div>
                 <div><FaGasPump /><div>{car.mpg} MPG</div></div>
-            </div>
-
+              </div>
 
               <div className="rent-btn">
                 <Button
@@ -92,26 +92,23 @@ function CarList() {
           </Card>
         ))}
       </div>
- 
 
       {showAlert && (
-  <div className="custom-alert-wrapper">
-    <sl-alert variant="success" open>
-      <sl-icon slot="icon" name="check2-circle"></sl-icon>
-      <strong>Appointment booked..!</strong><br />
-      Car will reach u at the earliest
-    </sl-alert>
-  </div>
-)}
-
-
+        <div className="custom-alert-wrapper">
+          <sl-alert variant="success" open>
+            <sl-icon slot="icon" name="check2-circle"></sl-icon>
+            <strong>Appointment booked..!</strong><br />
+            Car will reach u at the earliest
+          </sl-alert>
+        </div>
+      )}
 
       <Modal show={show} onHide={handleClose} centered size="lg" className='custom-modal'>
         <Modal.Header closeButton>
           <Modal.Title>Rent {selectedCar?.name}</Modal.Title>
         </Modal.Header>
         <Modal.Body className="d-flex flex-column flex-lg-row">
-          <div  className="mb-3 mb-lg-0" style={{ flex: 1 }}>
+          <div className="mb-3 mb-lg-0" style={{ flex: 1 }}>
             {selectedCar && (
               <img
                 src={selectedCar.image}
@@ -138,10 +135,10 @@ function CarList() {
                 <Form.Control className='placeholdertel' type="tel" placeholder="Enter phone number" />
               </Form.Group>
 
-              <Button variant="success"  onClick={() => {
-  setShowAlert(true); // Show the alert
-  handleClose();      // Close modal
-}}>
+              <Button 
+                variant="success" 
+                onClick={handleSave} // Use the new handleSave function instead
+              >
                 Save
               </Button>
             </Form>

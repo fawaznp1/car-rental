@@ -78,7 +78,7 @@ import abi from '../images/about1.jpg'
           <div className={`about-image-container ${isVisible ? 'visible' : ''}`}>
             <div className="about-image-bg"></div>
             <img 
-              src={abi}
+              src={abi} 
               alt="About Urban Drive"  
               className="about-image"
               loading='lazy'

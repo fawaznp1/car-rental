@@ -113,7 +113,7 @@ const ServicesSection = () => {
     }
   ];
 
-  // Function to change active feature every 4 seconds
+  // Function to change active feature every 2 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       if (hoveredCard === null) {
@@ -153,28 +153,6 @@ const ServicesSection = () => {
         </div>
         
         <div className="services-layout">
-          <div className="services-showcase">
-            <div className={`services-feature ${isVisible ? 'visible' : ''}`}>
-              {features.map((feature, index) => (
-                <div 
-                  key={feature.id} 
-                  className={`services-feature-content ${activeFeature === index ? 'active' : ''}`}
-                >
-                  <div className="feature-icon-large">
-                    {feature.icon}
-                  </div>
-
-                  
-                  <div className="feature-details">
-                    <h3 className="feature-title">{feature.title}</h3>
-                    <p className="feature-description">{feature.description}</p>
-                    <button className="feature-button">Learn More</button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          
           <div className={`services-grid ${isVisible ? 'visible' : ''}`}>
             {features.map((feature, index) => (
               <div 
