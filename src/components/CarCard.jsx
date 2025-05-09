@@ -61,7 +61,7 @@ function CarList() {
 
   return (
     <>
-        <h2 className="text-center text-uppercase fw-bold mb-4" id='catalog' style={{ color: '#f8f9fa', letterSpacing: '1px' }}>
+        <h2 className="cards-title text-center fw-bold mb-4" id='catalog' >
   Explore From a Wide Range of Premium Cars 
         </h2>
       <div className="car-grid" >
@@ -92,7 +92,7 @@ function CarList() {
           </Card>
         ))}
       </div>
-
+ 
 
       {showAlert && (
   <div className="custom-alert-wrapper">

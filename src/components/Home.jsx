@@ -1,20 +1,21 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import homeimage1 from '../images/jon-koop-khYVyHiNZo0-unsplash-removebg-preview.png';
-import hc2 from '../images/hc1 (2).png'
-import hc1 from '../images/hc1 (1).png'
-import hc3 from '../images/hc1 (3).png'
 import hc4 from '../images/hc3.png'
 
 
 import CarCard from './CarCard'
+import TestimonialSection from './Testimonial';
+import AboutSection from './About';
+import ServicesSection from './Service';
+import FAQSection from './FAQ';
+import TeamSection from './Team';
 
 function Home() {
   return (
     <>
-    <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center' }} className=" text-white">
-      <Container>
-        <Row id='home' className="align-items-center ms-4">
+    <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center' }} className=" text-white" id='home'>
+      <Container >
+        <Row  className="align-items-center ms-4">
           <Col md={7} className="text-center text-md-start p-4 ">
             <h1 className="display-4 fw-bold">Premium Car Rentals</h1>
             <p className="lead mt-3">
@@ -38,8 +39,13 @@ function Home() {
       </Container>
     </div>
 
+    <AboutSection />
+
     <CarCard />
 
+   <div id='service'>
+     <ServicesSection />
+   </div>
    
 
 <section className="pricing-section text-white py-5 px-3 " id="pricing">
@@ -70,6 +76,17 @@ function Home() {
     </p>
   </div>
 </section>
+
+    <div id='team'>
+      <TeamSection />
+    </div>
+
+    <TestimonialSection />
+
+    <FAQSection />
+
+
+    
 
 
     </>

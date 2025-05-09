@@ -24,8 +24,14 @@ function BasicExample() {
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
           <Nav>
             <Nav.Link href="#home" className="nav-link-custom mx-lg-3" onClick={() => setExpanded(false)}>Home</Nav.Link>
+            <Nav.Link href="#about" className="nav-link-custom mx-lg-3" onClick={() => setExpanded(false)}>About</Nav.Link>
             <Nav.Link href="#catalog" className="nav-link-custom mx-lg-3" onClick={() => setExpanded(false)}>Catalog</Nav.Link>
+            <Nav.Link href="#service" className="nav-link-custom mx-lg-3" onClick={() => setExpanded(false)}>Services</Nav.Link>
+              
             <Nav.Link href="#contact" className="nav-link-custom mx-lg-3" onClick={() => setExpanded(false)}>Contact Us</Nav.Link>
+            
+            
+          
             {/* <Nav.Link className="nav-link-custom mx-lg-3">
           <select className="form-select form-select-sm bg-dark text-white border-0" style={{ width: '100px' }}>
          <option value="en">EN</option>
