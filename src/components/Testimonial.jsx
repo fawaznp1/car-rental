@@ -131,6 +131,7 @@ const Testimonials = () => {
                     width="40"
                     height="40"
                     alt={t.name}
+                    loading="lazy"
                   />
                   <div>
                     <h6 className="mb-0 fw-semibold">{t.name}</h6>

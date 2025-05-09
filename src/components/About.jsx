@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 import './About.css';
 import abi from '../images/about1.jpg'
@@ -7,7 +6,6 @@ import abi from '../images/about1.jpg'
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
-   const navigate = useNavigate();
 
    const scrollTo = (id) => {
   const section = document.getElementById(id);
@@ -81,8 +79,9 @@ import abi from '../images/about1.jpg'
             <div className="about-image-bg"></div>
             <img 
               src={abi}
-              alt="About Urban Drive" 
+              alt="About Urban Drive"  
               className="about-image"
+              loading='lazy'
             />
             <div className="about-badge">
               Since 2002

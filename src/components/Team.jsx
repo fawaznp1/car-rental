@@ -167,7 +167,7 @@ const TeamSection = () => {
         {filteredMembers.map(member => (
           <div className="team-card" key={member.id}>
             <div className="member-photo">
-              <img src={member.photo} alt={member.name} />
+              <img src={member.photo} alt={member.name} loading='lazy' />
               <div className="department-badge">{departments.find(d => d.id === member.department).name}</div>
             </div>
             <div className="member-info">

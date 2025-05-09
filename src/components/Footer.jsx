@@ -19,10 +19,10 @@ const Footer = () => {
                 <a className="nav-link text-white" href="#about">About</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#pricing">Features</a>
+                <a className="nav-link text-white" href="#service">Features</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#works">Works</a>
+                <a className="nav-link text-white" href="#about">Works</a>
               </li>
              {/*  <li className="nav-item">
                 <a className="nav-link text-white" href="#support">Support</a>

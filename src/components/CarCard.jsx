@@ -68,7 +68,7 @@ function CarList() {
         
         {cars.map((car, idx) => (
           <Card className="car-card" key={idx}>
-            <Card.Img variant="top" src={car.image} className="car-img" />
+            <Card.Img variant="top" src={car.image} className="car-img"  loading='lazy'/>
             <Card.Body className="card-body-custom">
               <Card.Title className="text-center">{car.name}</Card.Title>
 

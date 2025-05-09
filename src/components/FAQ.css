@@ -1,4 +1,3 @@
-/* FAQ Section Styles */
 .faq-container {
   width: 100%;
   max-width: 800px;
@@ -80,7 +79,6 @@
   gap: 8px;
 }
 
-/* FAQ item styles */
 .faq-item {
   border: 1px solid #e5e7eb;
   border-radius: 8px;
@@ -166,6 +164,7 @@
 @media (max-width: 640px) {
   .faq-container {
     padding: 20px;
+    max-width: 90%;
   }
   
   .faq-title {

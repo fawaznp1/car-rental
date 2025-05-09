@@ -48,7 +48,7 @@ function Home() {
    </div>
    
 
-<section className="pricing-section text-white py-5 px-3 " id="pricing">
+{/* <section className="pricing-section text-white py-5 px-3 " id="pricing">
   <div className="container text-center">
     <h2 className="pricing-title mb-4">Pricing & Assurance</h2>
     <p className="pricing-subtitle lead mb-4">
@@ -75,7 +75,7 @@ function Home() {
       And no — kings do not bargain.
     </p>
   </div>
-</section>
+</section> */}
 
     <div id='team'>
       <TeamSection />
