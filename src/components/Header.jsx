@@ -97,7 +97,7 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className={navbarClass} variant={darkBackground ? "dark" : "light"} expanded={expanded} onToggle={setExpanded}>
       <Container>
-        <Navbar.Brand href="#home" className={`nav-brand mx-lg-3 ${darkBackground ? 'text-white' : 'text-dark'}`} onClick={() => {
+        <Navbar.Brand href="/" className={`nav-brand mx-lg-3 ${darkBackground ? 'text-white' : 'text-dark'}`} onClick={() => {
           setActiveLink('home');
           setExpanded(false);
         }}>Urban Drive</Navbar.Brand>
@@ -105,7 +105,7 @@ function BasicExample() {
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
           <Nav>
             <Nav.Link 
-              href="#home" 
+              href="/" 
               className={`nav-link-custom mx-lg-3 ${activeLink === 'home' ? 'active' : ''} ${darkBackground ? 'text-white' : 'text-dark'}`}
               onClick={() => {
                 setActiveLink('home');

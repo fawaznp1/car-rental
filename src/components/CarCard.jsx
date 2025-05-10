@@ -64,7 +64,7 @@ function CarList() {
   return (
     <>
       <h2 className="cards-title text-center fw-bold mb-4" id='catalog'>
-        Explore From a Wide Range of Premium Cars 
+        Explore Luxury Rides
       </h2>
       <div className="car-grid">
         {cars.map((car, idx) => (
