@@ -8,6 +8,7 @@ import ServicesSection from './Service';
 import FAQSection from './FAQ';
 import TeamSection from './Team';
 import PricingSection from './Pricing';
+import './Home.css'
 
 function Home() {
   return (
@@ -21,9 +22,14 @@ function Home() {
               Book your ride in seconds — pay only for the time you drive. Enjoy flexible, affordable, and premium vehicles for every journey.
             </p>
             <a href='#catalog'>
-              <Button variant="primary" size="lg" className="mt-3" >
-                Book Now
-              </Button>
+             <Button 
+  variant="primary" 
+  size="lg" 
+  className="btn-book-now mt-3"
+>
+  <span>Book Now </span>
+  <i className="fas fa-arrow-right"></i> {/* If using Font Awesome */}
+</Button>
             </a>
           </Col>
           <Col md={5} className="text-center">
