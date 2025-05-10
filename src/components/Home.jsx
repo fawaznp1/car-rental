@@ -14,7 +14,7 @@ function Home() {
     <>
     <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center' }} className=" text-white" id='home'>
       <Container >
-        <Row  className="align-items-center ms-4">
+        <Row  className="align-items-center ms-2">
           <Col md={7} className="text-center text-md-start p-4 ">
             <h1 className="display-4 fw-bold">Premium Car Rentals</h1>
             <p className="lead mt-3">

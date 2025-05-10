@@ -256,7 +256,8 @@ sl-alert {
     right: auto;
     transform: translateX(-50%);
     width: 90%;
-    max-width: 400px;
+    max-width: 200px;
+    margin-right: 2px;
   }
 }
 
@@ -270,7 +271,18 @@ sl-alert {
   .car-card {
     height: 300px;
   }
+   .custom-alert-wrapper {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 200px;
+    margin-right: 2px;
+  }
+
 }
+
+
 
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {

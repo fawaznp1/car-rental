@@ -100,7 +100,7 @@ function CarList() {
             <strong>Appointment booked..!</strong><br />
             Car will reach u at the earliest
           </sl-alert>
-        </div>
+        </div> 
       )}
 
       <Modal show={show} onHide={handleClose} centered size="lg" className='custom-modal'>
@@ -137,7 +137,7 @@ function CarList() {
 
               <Button 
                 variant="success" 
-                onClick={handleSave} // Use the new handleSave function instead
+                onClick={handleSave} 
               >
                 Save
               </Button>
